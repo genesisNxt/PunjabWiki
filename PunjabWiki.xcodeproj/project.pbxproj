@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		44663FC424C33C8D008A7D05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44663FC324C33C8D008A7D05 /* AppDelegate.swift */; };
 		44663FC624C33C8D008A7D05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44663FC524C33C8D008A7D05 /* SceneDelegate.swift */; };
-		44663FC824C33C8D008A7D05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44663FC724C33C8D008A7D05 /* ViewController.swift */; };
+		44663FC824C33C8D008A7D05 /* DistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44663FC724C33C8D008A7D05 /* DistViewController.swift */; };
 		44663FCB24C33C8D008A7D05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44663FC924C33C8D008A7D05 /* Main.storyboard */; };
 		44663FCE24C33C8D008A7D05 /* PunjabWiki.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44663FCC24C33C8D008A7D05 /* PunjabWiki.xcdatamodeld */; };
 		44663FD024C33C90008A7D05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44663FCF24C33C90008A7D05 /* Assets.xcassets */; };
 		44663FD324C33C90008A7D05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44663FD124C33C90008A7D05 /* LaunchScreen.storyboard */; };
+		44663FDB24C33D70008A7D05 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44663FDA24C33D70008A7D05 /* Constant.swift */; };
+		44663FDD24C33DB1008A7D05 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44663FDC24C33DB1008A7D05 /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44663FC024C33C8D008A7D05 /* PunjabWiki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunjabWiki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44663FC324C33C8D008A7D05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44663FC524C33C8D008A7D05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44663FC724C33C8D008A7D05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44663FC724C33C8D008A7D05 /* DistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistViewController.swift; sourceTree = "<group>"; };
 		44663FCA24C33C8D008A7D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44663FCD24C33C8D008A7D05 /* PunjabWiki.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PunjabWiki.xcdatamodel; sourceTree = "<group>"; };
 		44663FCF24C33C90008A7D05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44663FD224C33C90008A7D05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44663FD424C33C90008A7D05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44663FDA24C33D70008A7D05 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		44663FDC24C33DB1008A7D05 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,48 @@
 			children = (
 				44663FC324C33C8D008A7D05 /* AppDelegate.swift */,
 				44663FC524C33C8D008A7D05 /* SceneDelegate.swift */,
-				44663FC724C33C8D008A7D05 /* ViewController.swift */,
-				44663FC924C33C8D008A7D05 /* Main.storyboard */,
-				44663FCF24C33C90008A7D05 /* Assets.xcassets */,
-				44663FD124C33C90008A7D05 /* LaunchScreen.storyboard */,
+				44663FE024C33E3E008A7D05 /* Model */,
+				44663FDF24C33E1D008A7D05 /* View */,
+				44663FDE24C33E07008A7D05 /* Controller */,
+				44663FE124C33E69008A7D05 /* Supporting Files */,
 				44663FD424C33C90008A7D05 /* Info.plist */,
-				44663FCC24C33C8D008A7D05 /* PunjabWiki.xcdatamodeld */,
+				44663FDA24C33D70008A7D05 /* Constant.swift */,
 			);
 			path = PunjabWiki;
+			sourceTree = "<group>";
+		};
+		44663FDE24C33E07008A7D05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44663FC724C33C8D008A7D05 /* DistViewController.swift */,
+				44663FDC24C33DB1008A7D05 /* CityViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		44663FDF24C33E1D008A7D05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44663FC924C33C8D008A7D05 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		44663FE024C33E3E008A7D05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44663FCC24C33C8D008A7D05 /* PunjabWiki.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44663FE124C33E69008A7D05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44663FCF24C33C90008A7D05 /* Assets.xcassets */,
+				44663FD124C33C90008A7D05 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44663FC824C33C8D008A7D05 /* ViewController.swift in Sources */,
+				44663FC824C33C8D008A7D05 /* DistViewController.swift in Sources */,
 				44663FC424C33C8D008A7D05 /* AppDelegate.swift in Sources */,
+				44663FDB24C33D70008A7D05 /* Constant.swift in Sources */,
 				44663FC624C33C8D008A7D05 /* SceneDelegate.swift in Sources */,
 				44663FCE24C33C8D008A7D05 /* PunjabWiki.xcdatamodeld in Sources */,
+				44663FDD24C33DB1008A7D05 /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

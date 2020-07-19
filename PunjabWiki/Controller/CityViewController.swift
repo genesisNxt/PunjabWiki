@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CityViewController.swift
 //  PunjabWiki
 //
 //  Created by PARMJIT SINGH KHATTRA on 19/7/20.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
+    
 
 
 }
-
