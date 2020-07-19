@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dist View Controller-->
+        <!--District-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="DistViewController" customModule="PunjabWiki" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +47,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dzp-v8-Bcp">
+                    <navigationItem key="navigationItem" title="District" id="dzp-v8-Bcp">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ucc-iW-ept">
                             <connections>
                                 <action selector="addDist:" destination="BYZ-38-t0r" id="lZO-or-42x"/>
@@ -63,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="902.89855072463774" y="101.78571428571428"/>
         </scene>
-        <!--City View Controller-->
+        <!--City-->
         <scene sceneID="OyY-fa-VFt">
             <objects>
                 <viewController id="r0S-oW-aOe" customClass="CityViewController" customModule="PunjabWiki" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,6 +84,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="r0S-oW-aOe" id="DuN-GL-aV2"/>
+                                    <outlet property="delegate" destination="r0S-oW-aOe" id="ikT-Jq-XjE"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rnU-P1-gGw">
                                 <rect key="frame" x="0.0" y="88" width="414" height="56"/>
@@ -103,7 +107,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="44c-db-pLc"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FlV-hq-97v"/>
+                    <navigationItem key="navigationItem" title="City" id="FlV-hq-97v">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="c8j-Sf-xYJ">
+                            <connections>
+                                <action selector="addCity:" destination="r0S-oW-aOe" id="PyG-5P-zOR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="SUa-U2-5TP" id="v4N-x2-LB9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXO-DD-N0y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
